@@ -13,6 +13,53 @@ Things you may want to cover:
 
 * Database creation
 
+## groups_usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
+
+## users_テーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, index: true|
+|email|string|null: false, unique: true,index: true|
+
+### Association
+- has_many :groups, through: :groups_users
+- has_meny :groups_users
+- has/many :messages
+
+## groups_テーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+
+### Association
+- has_many :users, through: :groups_users
+- has_meny :groups_users
+- has/many :messages
+
+## messages_テーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|body|text||
+|image|string||
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
+
 * Database initialization
 
 * How to run the test suite
@@ -20,5 +67,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
