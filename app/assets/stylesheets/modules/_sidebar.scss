@@ -46,6 +46,7 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px; 
+    color: white;
 
    &__group {
     margin-bottom: 50px;
@@ -53,9 +54,15 @@
     font-size: 15px;
     color: white;
    }
+
+   &__group-name {
+     color: white;
+   }
+   
    &__group__latest-message {
     font-size: 11px;
     margin-top: 5px;
+    color: white;
    }
   }
 }
