@@ -59,57 +59,41 @@
     width: 100%;
     display: flex;
 
-    &__new-message {
+    .new_message {
       display: flex;
-      padding-right: 115px;
+
       width: 100%;
       margin: 0 auto;
+    }
     
-      &__input-box {
-        position: relative;
-        width: 100%;
+    .form__message {
+      width: 100%;
+      height: 50px;
+      padding-left: 10px;
+      border-style: none;
+      color: #434a54;
+      position: relative;
+    }
 
-        &__text {
-          width: 100%;
-          height: 50px;
-          padding-left: 10px;
-          border-style: none;
-          color: #434a54;
-          position: relative;
-        }
+    .message_box{
+      position: relative;
+      width: 100%;
+    }
+    .form__mask__image {
+      color: black;
+      position: absolute;
+      align-items: center;
+      font-size: 1.3rem;
+      top: 10px;
+      right: 120px;
+      cursor: pointer;
 
-        &__image {
-          justify-content: center;
-          background-color: #ffffff;
-          display: flex;
-          align-items: center;
-          position: relative;
-
-          &__gazo {
-            color: black;
-            position: absolute;
-            align-items: center;
-            // text-decoration: none;
-            font-size: 1.3rem;
-            left: 155px;
-            bottom: 100%;
-            padding-bottom: 10px;
-            // right: 130px;
-            // top: 12px;
-            padding-left: 305px;
-            width: 100px;
-            // height: 100%;
-            cursor: pointer;
-
-          }
-        }
+      .hidden{
+        display: none;
       }
-      
-.none{
-  display: none;
-}
+    }
 
-    &__send {
+    .form__send {
       position: absolute;
       display: flex;
       justify-content: center;
@@ -120,14 +104,10 @@
       bottom: 20px;
       width: 100px;
       background-color: #38aef0;
-
-      &__button {
-        color: white;
-        text-decoration: none;
-      }
+      color: white;
      }
       
-    }
+    
   }
 
   &__main-header { 
@@ -141,24 +121,17 @@
     display: flex;
     text-decoration: none;
 
-    &__edit {
-      height: 40px;
-      line-height: 40px;
-      // padding: 0 1px;
-      margin-top: 30px;
-      border: solid 1px #38aef0;
-      position: absolute;
-      right: 40px;
-      
-      &__button{
+    &__edit{
+      &__botton {
+        margin: 0 40px 0 0;
         color: #38aef0;
         font-size: 16px;
+        border: 1px solid;
+        padding: 10px 20px;
         text-decoration: none;
-        padding-left: 20px;
-        padding-right: 20px;
-        
+        line-height: 20px;
       }
-    } 
+    }
 
     &__left-box {
       margin-top: 35px;
