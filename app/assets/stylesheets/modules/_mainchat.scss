@@ -17,27 +17,25 @@
     bottom: 0;
     left: 0;
 
-    &__message {
+    .message {
       padding-bottom: 40px;
 
-      &__info {
+      .upper-message {
         display: flex;
         margin-bottom: 10px;
       
-        &__talker {
+        .upper-message__user-name {
           color: #333333;
           font-size: 16px;
           font-weight: bold;
           // text-align: left;
-        
-          &__date {
-            color: #999999;
-            font-size: 12px;
-            // text-align: left;
-            margin-left: 10px;
-            float: right;
-            font-weight: 100;
-          }
+        }
+        .upper-message__date {
+          color: #999999;
+          font-size: 12px;
+          // text-align: left;
+          margin-left: 10px;
+          font-weight: 100;
         }
        }
     
@@ -123,13 +121,15 @@
 
     &__edit{
       &__botton {
-        margin: 0 40px 0 0;
+        margin-top: 28px ;
+        right: 40px;
         color: #38aef0;
         font-size: 16px;
         border: 1px solid;
         padding: 10px 20px;
         text-decoration: none;
         line-height: 20px;
+        display: block;
       }
     }
 
