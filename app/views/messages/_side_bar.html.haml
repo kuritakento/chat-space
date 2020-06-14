@@ -5,14 +5,14 @@
       .chat-side__side-header__box__user-name
         = current_user.name
       .chat-side__side-header__box__menu
-        = link_to new_group_path , class: "btn" do
+        = link_to new_group_path do
           = icon('far', 'edit')
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'icon')
   .chat-side__groups
     - current_user.groups.each do |group|
       .chat-side__groups__group
-        = link_to group_messages_path(group) , class: "groupname" do
+        = link_to group_messages_path(group) do
           .chat-side__groups__group-name
             = group.name
           .chat-side__groups__group__latest-message
