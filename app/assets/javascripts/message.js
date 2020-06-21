@@ -52,6 +52,7 @@ $('#new_message').on('submit', function(e){
    contentType: false
  })
   .done(function(data){
+
     var html = buildHTML(data);
     $('.chat-main__messages').append(html);
     $('form')[0].reset();
@@ -59,6 +60,7 @@ $('#new_message').on('submit', function(e){
     $('.form__send').attr('disabled', false);
   })
   .fail(function() {
+    
     alert("メッセージ送信に失敗しました");
 });
 })
