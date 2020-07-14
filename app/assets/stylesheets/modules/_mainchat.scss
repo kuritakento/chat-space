@@ -8,7 +8,7 @@
   &__messages {
   height: calc(100vh - 190px);
     padding: 46px 40px;
-    background-color: orange;
+    background-color: rgb(253, 208, 124);
     overflow: scroll;
     margin: 0 auto;
     position: absolute;
@@ -31,7 +31,7 @@
           // text-align: left;
         }
         .upper-message__date {
-          color: #999999;
+          color: black;
           font-size: 12px;
           // text-align: left;
           margin-left: 10px;
@@ -51,7 +51,7 @@
   &__form {
     height: 90px;
     padding: 20px 40px;
-    background-color: orange;
+    background-color: rgb(255, 191, 73);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -118,7 +118,7 @@
     // background-color: white;
     display: flex;
     text-decoration: none;
-    background-color: orange;
+    background-color: rgb(255, 191, 73);
 
     &__edit{
       &__botton {
@@ -126,7 +126,7 @@
         right: 40px;
         color: orangered;
         font-size: 16px;
-        border: 1px solid;
+        border: 3px solid;
         padding: 10px 20px;
         text-decoration: none;
         line-height: 20px;
@@ -146,7 +146,7 @@
       &__member-list {
         display: flex;
         font-size: 12px;
-        color: #999999;
+        color: black;
         list-style: none;
       }
 
