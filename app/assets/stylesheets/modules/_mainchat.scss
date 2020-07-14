@@ -4,9 +4,9 @@
   // background-color: yellow;
   display: flex;
   position: relative;
-
+  
   &__messages {
-    height: calc(100vh - 190px);
+  height: calc(100vh - 190px);
     padding: 46px 40px;
     background-color: #fafafa;
     overflow: scroll;
